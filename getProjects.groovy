@@ -1,5 +1,5 @@
 // This is a basic example to get a list of projects
-// using the REST API
+// using the REST API with ec-groovy
 
 @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7.1')
 
