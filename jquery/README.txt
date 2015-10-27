@@ -1,11 +1,11 @@
-======================== JQuery and Commander REST API examples =======================
+======================== JQuery and ElectricFlow REST API examples =======================
 
 What is it?
 __________
 
 This folder contains 4 main things:
 
-1. commanderREST.html - This is the main file that has all the example code in it.  Run this by opening it up in your favorite browser
+1. flowREST.html - This is the main file that has all the example code in it.  Run this by opening it up in your favorite browser
 
 2. workflowManager.html - This is a custom workflow dashboard that shows how to launch/monitor/edit workflows via the API.
 
@@ -18,7 +18,7 @@ This folder contains 4 main things:
 Documentation
 _____________
 
-Commander API - http://docs.electric-cloud.com/commander_doc/5_2/HTML5/Help/CommanderHelpHTML.htm#restapiabout.htm%3FTocPath%3DHow%20to%20Use%20the%20REST%20API%7C_____0
+ElectricFlow API - http://docs.electric-cloud.com/eflow_doc/6_1/API/HTML/APIflowHTML.htm
 
 JQuery UI - http://jqueryui.com/
 
