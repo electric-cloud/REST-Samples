@@ -82,12 +82,12 @@ function login()
     		},
 		error: function(result) {
 			console.log(result.responseText);
-			$("#loginMessage").html('<span class="error">Error: Make sure you have setup up your SSL certs correctly, or see the Commander documentation for development work - <a href="http://docs.electric-cloud.com/commander_doc/5_2/HTML5/Help/CommanderHelpHTML.htm#restapiaccess.htm%3FTocPath%3DHow%20to%20Use%20the%20REST%20API%7C_____1">Accessing the REST API</a></span');
+			$("#loginMessage").html('<span class="error">Error: Make sure you have setup up your SSL certs correctly, or see the ElectricFlow documentation for development work - <a href="http://docs.electric-cloud.com/eflow_doc/6_1/API/HTML/APIflowHTML.htm#restapiabout.htm%3FTocPath%3DUsing%20the%20ElectricFlow%20RESTful%20API%7C_____0">Accessing the REST API</a></span');
 		}
 	});
 }
 
-// This is a sample ajax function to poll a commander API
+// This is a sample ajax function to poll a flow API
 function serverStatusHeartbeat()
 {
 	//This polling example could be used to check on a current jobid
@@ -108,7 +108,7 @@ function serverStatusHeartbeat()
 			$("#serverStatus").switchClass( "server", "serverAlive", 1000, "easeInOutQuad" );
 			$("#serverStatus").switchClass( "serverAlive", "server", 1000, "easeInOutQuad" );
 			if( result.serverStatus.serverState != "running" ){
-				alert( "Commander server down!" );
+				alert( "ElectricFlow server down!" );
 			}
     		},
 		complete: serverStatusHeartbeat,
@@ -121,7 +121,7 @@ function serverStatusHeartbeat()
 	}, 3000);
 }
 
-// This is an example of getting jobs from the commander API and 
+// This is an example of getting jobs from the Flow API and 
 // then displaying the info in HTML.  This example uses the JQuery UI
 // library to display an accordian of the last 10 jobs
 function getJobDetails()
@@ -211,7 +211,7 @@ function getJobsPerDayChart()
 	});
 }
 
-// This example gets real time data from the Commander server
+// This example gets real time data from the Flow server
 function getRealTimeStats()
 {
 		var jobCount = [];
@@ -293,12 +293,12 @@ function getRealTimeStats()
 $(document).ready( function() {
 
  	//This is required in IE if you want to run
-	//cross site (i.e. not from the commander web server) and you don't
+	//cross site (i.e. not from the flow web server) and you don't
 	//have your web server configured for CORS.
 	//Chrome seems to allow this by default and Firefox does not
 	//allow this at all unless there is a setting in the web server config
 	//to allow this.  The other option is to host this web page from
-	//the same place as the commander server. Again, Firefox will  not
+	//the same place as the flow server. Again, Firefox will  not
 	//allow the content to run unless you change the setting on Apache
 	//Firefox considers a port change a domain change. 
 	//See - https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy
