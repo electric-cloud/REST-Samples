@@ -10,15 +10,15 @@ def _server="SERVER"    // Your server
 def _user="USER"        // User to authenticate
 def _pwd="PASSWORD"     // Password
 
-def cmdr = new RESTClient( 'https://' + _server + ':8443/rest/v1.0/' )
-cmdr.ignoreSSLIssues()
+def flow = new RESTClient( 'https://' + _server + ':8443/rest/v1.0/' )
+flow.ignoreSSLIssues()
 
 // Authentication
 def auth= _user + ":" + _pwd
-cmdr.headers['Authorization'] = 'Basic '+ auth.getBytes().encodeBase64()
+flow.headers['Authorization'] = 'Basic '+ auth.getBytes().encodeBase64()
 
 // REST call to get project list
-def resp = cmdr.get( path : 'projects' ) // Get list of projects
+def resp = flow.get( path : 'projects' ) // Get list of projects
 
 if (resp == null ) {
    println "Could not get project list on the Commander. Request failed"
