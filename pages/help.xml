@@ -1,0 +1,119 @@
+<componentContainer>
+	<style>
+		/*** Table Styles **/
+		table.helpdoc.table-fill {
+		  background: white;
+		  border-radius:3px;
+		  border-collapse: collapse;
+		  height: 320px;
+		  margin: auto;
+		  max-width: 600px;
+		  padding:5px;
+		  width: 100%;
+		  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+		  animation: float 5s infinite;
+		}
+		 
+		table.helpdoc th {
+		  background:#9dbee1;
+		  border-bottom:4px solid #9ea7af;
+		  border-right: 1px solid #343a45;
+		  font-size:23px;
+		  font-weight: 100;
+		  padding:24px;
+		  text-align:left;
+		  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+		  vertical-align:middle;
+		}
+		  
+		table.helpdoc tr {
+		  border-top: 1px solid #C1C3D1;
+		  border-bottom-: 1px solid #C1C3D1;
+		  color:#666B85;
+		  font-size:16px;
+		  font-weight:normal;
+		  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+		}
+		 
+		table.helpdoc tr:hover td {
+		  background:#4E5066;
+		  color:#FFFFFF;
+		  border-top: 1px solid #22262e;
+		  border-bottom: 1px solid #22262e;
+		}
+		 
+		table.helpdoc tr:first-child {
+		  border-top:none;
+		}
+
+		table.helpdoc tr:last-child {
+		  border-bottom:none;
+		}
+		 
+		table.helpdoc tr:nth-child(odd) td {
+		  background:#EBEBEB;
+		}
+		 
+		table.helpdoc tr:nth-child(odd):hover td {
+		  background:#4E5066;
+		}
+
+		table.helpdoc tr:last-child td:first-child {
+		  border-bottom-left-radius:3px;
+		}
+		 
+		table.helpdoc tr:last-child td:last-child {
+		  border-bottom-right-radius:3px;
+		}
+		 
+		table.helpdoc td {
+		  background:#FFFFFF;
+		  padding:5px;
+		  text-align:left;
+		  vertical-align:middle;
+		  font-weight:300;
+		  font-size:18px;
+		  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+		  border-right: 1px solid #C1C3D1;
+		}
+
+		table.helpdoc td:last-child {
+		  border-right: 0px;
+		}
+
+		table.helpdoc th.text-left {
+		  text-align: left;
+		}
+
+		table.helpdoc th.text-center {
+		  text-align: center;
+		}
+
+		table.helpdoc th.text-right {
+		  text-align: right;
+		}
+
+		table.helpdoc td.text-left {
+		  text-align: left;
+		}
+
+		table.helpdoc td.text-center {
+		  text-align: center;
+		}
+
+		table.helpdoc td.text-right {
+		  text-align: right;
+		}
+
+	</style>
+	<title>REST Samples Help</title>
+	<h2>REST Samples Help</h2>
+	<h3>Overview</h3>
+	<p>This plugin provides Electric Flow REST API call examples and a starting point for creating dashboard or other web pages from EF API calls packaged as a plugin.</p>
+	<table class="helpdoc">
+			<tr><th>Examples</th><th>Description</th></tr>
+			<tr><td class="underline"><a href="../../plugins/REST-Samples/jobsChart.html">Job Chart</a></td><td>Job Charting</td></tr>
+			<tr><td class="underline"><a href="../../plugins/REST-Samples/flowREST.html">Flow REST</a></td><td>REST Sample</td></tr>
+			<tr><td class="underline"><a href="../../plugins/REST-Samples/workflowManager.html">Workflow Management</a></td><td>Workflow Manager</td></tr>
+	</table>
+</componentContainer>
