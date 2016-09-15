@@ -1,0 +1,11 @@
+<plugin>
+  <author>Electric Cloud</author>
+  <authorUrl></authorUrl>
+  <category>Utility</category>
+  <commander-version min="5.0" />
+  <description>REST Samples</description>
+  <help>help.xml</help>
+  <key>REST-Samples</key>
+  <label>REST-Samples</label>
+  <version>1.0</version>
+</plugin>
